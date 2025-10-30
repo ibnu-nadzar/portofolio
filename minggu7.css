@@ -1,0 +1,261 @@
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #ffb6e6, #ffe6fa);
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Konten utama */
+main {
+    padding: 20px;
+}
+
+/* Section Hero */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+
+/* Tombol dengan efek hover */
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Layout dengan Flexbox */
+#kontak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+/* Footer */
+footer {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+body {
+    background: linear-gradient(to right, #ffb6e6, #ffe6fa);
+}
+header, button, footer {
+    background-color: #ec27ab;
+}
+.cv-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #ffe6fa;
+    border-radius: 14px;
+    padding: 40px 16px 28px 16px;
+    margin: 40px auto 28px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 12px 0 rgba(236, 39, 171, 0.13);
+}
+.cv-foto img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #ec27ab;
+    object-fit: cover;
+    box-shadow: 0 2px 18px #ffb6e6cc;
+}
+.cv-biodata {
+    flex: 1;
+}
+.cv-biodata h2 {
+    color: #ec27ab;
+}
+.cv-biodata h4 {
+    color: #ff69b4;
+    margin-bottom: 8px;
+}
+.sosmed {
+    list-style: none; display: flex; gap: 18px; padding: 0;
+}
+.sosmed li a {
+    color: #ec27ab; font-weight: bold; text-decoration: none; transition: 0.2s;
+}
+.sosmed li a:hover {
+    color: #ff69b4;
+}
+.container {
+    background: rgba(255,255,255,0.85);
+    border-radius: 15px;
+    box-shadow: 0 1px 12px #fa66bf29;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 28px 20px;
+    text-align: center;
+}
+.pie-skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+.pie-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pie-chart {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 7px;
+}
+.circle-bg {
+    fill: none;
+    stroke: #ffeff9;
+    stroke-width: 3.8;
+}
+.circle-html {
+    fill: none;
+    stroke: #ed53b3;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.circle-css {
+    fill: none;
+    stroke: #e647af;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.circle-js {
+    fill: none;
+    stroke: #ff7f98;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.circle-python {
+    fill: none;
+    stroke: #d9147f;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.pie-text {
+    font-size: 11px;
+    font-weight: bold;
+    fill: #ec27ab;
+    text-anchor: middle;
+}
+.pie-caption {
+    font-weight: bold;
+    color: #ff69b4;
+    font-size: 1.2em;
+    margin-top: -4px;
+    margin-bottom: 12px;
+}
+@media (max-width: 700px) {
+    .cv-section {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .pie-skill-container {gap: 22px;}
+}
+.skills-bar-group {
+    width: 95%;
+    max-width: 540px;
+    margin: 28px auto 5px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.bar-skill span {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #e647af;
+    display: inline-block;
+    margin-left: 5px;
+}
+.bar {
+    background: #ffe6fa;
+    border-radius: 22px;
+    height: 26px;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 #fcd5eb3d;
+    overflow: hidden;
+}
+.bar-fill {
+    height: 100%;
+    line-height: 26px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 22px 0 0 22px;
+    padding-left: 14px;
+    background: linear-gradient(90deg,#ec27ab 60%,#ffb6e6 100%);
+    transition: width 1.2s cubic-bezier(.24,.75,.18,1.07);
+    display: flex;
+    align-items: center;
+}
+.bar-fill.html { width: 70%; background: linear-gradient(90deg,#ed53b3 60%,#fec9fa 100%); }
+.bar-fill.css { width: 50%; background: linear-gradient(90deg,#e647af 50%,#fae0ff 100%); }
+.bar-fill.js { width: 80%; background: linear-gradient(90deg,#ff7f98 60%,#ffedfa 100%); }
+.bar-fill.python { width: 70%; background: linear-gradient(90deg,#d9147f 80%,#ffcaf6 100%); }
